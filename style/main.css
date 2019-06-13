@@ -1,0 +1,294 @@
+@import url(fonts/fonts.css);
+.section {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Avenir';
+}
+/*** Styles header***/
+.logo { 
+    font-family: 'Avenir';
+    font-size: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    position: absolute;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Avenir';
+    font-weight: 900;
+    position: absolute;
+    right: 1%;
+    top: 2%;
+
+}
+
+.menu__nav {
+    transition: 0.3s;
+    transform-origin: right center;
+    transform: scaleX(0);
+    opacity: 0;
+}
+
+.menu__nav_active {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.menu__nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.menu__btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.menu__btn span,
+.menu__btn span:before,
+.menu__btn span:after {
+    position: absolute;
+    margin-top: -1px;
+    margin-left: -15px;
+    left: 50%;
+    top: 50%;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.menu__btn span:before,
+.menu__btn span:after{
+    content: '';
+    display: block;
+    transition: 0.3s;
+}
+.menu__btn-active span {
+    height: 0;
+}
+
+.menu__btn span:before {
+    transform: translateY(-8px);
+}
+.menu__btn span:after {
+    transform: translateY(8px);
+}
+.menu__btn-active span:before{
+    transform: rotate(45deg);
+}
+.menu__btn-active span:after{
+    transform: rotate(-45deg);
+}
+.header {
+    background: url('../img/head_bg.png') no-repeat center/cover;
+    overflow: hidden;
+}
+.header__title {
+    margin-top: 20%;
+}
+.header__title h1 {
+    font-size: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    padding: 0;
+    padding-right: 185px;
+    margin: 0;
+    letter-spacing: .1em;
+}
+.header__subtitle  {
+    margin: 0;
+    font-size: 16px;
+    color: #b3b3b3;
+    padding: 20px 490px 90px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Lato';
+    font-weight: 700;
+    letter-spacing: .3em;
+}
+.header__more {
+    font-size: 14px;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    position: relative;
+    left: 11%;
+    
+
+}
+.header__more::before {
+    content: '';
+    position: absolute;
+    width: 135%;
+    height: 3px;
+    background-color: #ff4200;
+    top: -30px;
+    left: 2px;
+
+}
+.header__more i {
+    color: #ff4200;
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+    transition: .5s all ease;
+}
+
+.header__more:hover i {
+    transform: translateX(20px);
+}
+.mouse {
+    position: relative;
+    top: 40px;
+    left: 22%;
+    
+}
+.mouse img {
+    transition: .6s all ease;
+}
+.mouse:hover img {
+    transform: translateY(14px);
+}
+.mouse__scroll{
+    content: '';
+    position: absolute;
+    width: 15%;
+    color: #737373;
+    top: 102px;
+    left: -52px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 900;
+    transform: rotate(90deg);
+    transition: .6s all ease;
+    border-bottom: 3px solid #737373;
+    padding-bottom: 24px;
+}
+.mouse:hover .mouse__scroll {
+    color:#ff4200;
+}
+
+/*** Styles studio***/
+.studio{
+    background-color: #fff;
+}
+.studio_bg {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.studio_bg img {
+    width: 40%;
+    z-index: 0;
+    position: relative;
+    top: -40px;
+    right: 11%;
+    
+}
+
+.studio__title {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5em;
+    position: relative;
+    top: 180px;
+    z-index: 2;
+}
+
+.studio__title span {
+    color: #ff4200;
+}
+.letter__bg {
+    font-size: 800px;
+    font-family: 'Avenir';
+    font-weight: 700;
+    color: #fafafa;
+    position: absolute;
+    bottom: -20%;
+    left: -5%;
+    text-transform: uppercase;
+    z-index: 0;
+}
+.letters__bg {
+    font-size: 250px;
+    font-family: 'Avenir';
+    font-weight: 700;
+    color: #fafafa;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    right: -5%;
+    letter-spacing: 0.3em;
+}
+
+.studio__description {
+    width: 60%;
+    z-index: 2;
+    font-size: 14px;
+    color: #999999;
+    position: relative;
+    text-align: left;
+    margin: 0 auto;
+    bottom: 50px;
+    line-height: 2em;
+}
+.studio__description:before{
+    content: '';
+    position: absolute;
+    width: 45%;
+    top: -45px;
+    left: 10px;
+    height: 3px;
+    background-color: #ededed;
+}
+/*** Styles portfolio***/
+.portfolio {
+    background: url('../img/portfolio_bg.png') no-repeat center/cover;
+}
+
+.portfolio__title h2 {
+    font-size: 42px;
+    color: #fff;
+    letter-spacing: .4em;
+    border-bottom: 3px solid #ff4200;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    width: 39%;
+    margin: 8% 0 0 15%;
+}
+.portfolio__examples {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 11%;
+    margin-left: 15%;
+}
+.portfolio__examples_item {
+    width: 80%;
+}
+
+
+.top img {
+    margin-top: -70px;
+}
+
+/*** Styles portfolio***/
+
+.contact {
+    background: url('../img/contact.png') no-repeat center/cover;
+}
