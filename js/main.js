@@ -44,7 +44,8 @@ var aboutBtn = document.querySelector('.about'),
     portfolioBtn = document.querySelector('.portfolioBtn'),
     contactBtn = document.querySelector('.contact'),
     portfolioSection = document.querySelector('.portfolio'),
-    contactSection = document.querySelector('.contact');
+    contactSection = document.querySelector('.contact'),
+    formBtn = document.querySelector('.form-btn');
 
     aboutBtn.addEventListener('click', function(e){
         e.preventDefault();
@@ -77,3 +78,14 @@ var aboutBtn = document.querySelector('.about'),
         contactSection.style.transform = 'translate3d(0px, 0px, 0px)';   
         contactSection.classList.add('active');      
     });
+
+    formBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        studio.style.transform = 'translate3d(0px, -100%, 0px)';
+        studio.classList.remove('active');
+        portfolioSection.style.transform = 'translate3d(0px, -100%, 0px)';   
+        portfolioSection.classList.remove('active');
+        contactSection.style.transform = 'translate3d(0px, 0px, 0px)';   
+        contactSection.classList.add('active'); 
+
+    })

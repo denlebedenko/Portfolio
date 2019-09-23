@@ -257,6 +257,10 @@
     height: 3px;
     background-color: #ededed;
 }
+.form-btn { 
+    color: #ff4200;
+}
+
 /*** Styles portfolio***/
 .portfolio {
     background: url('../img/portfolio_bg.png') no-repeat center/cover;
