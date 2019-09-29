@@ -137,7 +137,7 @@
     height: 3px;
     background-color: #ff4200;
     top: -30px;
-    left: 2px;
+    left: -2px;
 
 }
 .header__more i {
@@ -163,13 +163,13 @@
 .mouse:hover img {
     transform: translateY(14px);
 }
-.mouse__scroll{
+.mouse__scroll {
     content: '';
     position: absolute;
-    width: 15%;
+    width: 19%;
     color: #737373;
-    top: 102px;
-    left: -52px;
+    top: 124px;
+    left: -87px;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 900;
@@ -178,6 +178,7 @@
     border-bottom: 3px solid #737373;
     padding-bottom: 24px;
 }
+
 .mouse:hover .mouse__scroll {
     color:#ff4200;
 }
@@ -278,14 +279,37 @@
 }
 .portfolio__examples {
     display: flex;
+    justify-content: space-between;
+}
+.protfolio__examples-works {
+    display: flex;
     align-items: flex-start;
     margin-top: 11%;
-    margin-left: 15%;
 }
 .portfolio__examples_item {
     width: 80%;
 }
 
+.portfolio__expemples-points {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.point {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #999999;
+    width: 110%;
+    line-height: 4.3em;
+}
+
+.point:hover {
+    color: #ffffff;
+
+}
 
 .top img {
     margin-top: -70px;
