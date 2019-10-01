@@ -10,6 +10,7 @@
     font-family: 'Avenir';
 }
 /*** Styles header***/
+
 .logo { 
     font-family: 'Avenir';
     font-size: 60px;
@@ -275,7 +276,7 @@
     text-transform: uppercase;
     padding-bottom: 20px;
     width: 39%;
-    margin: 8% 0 0 15%;
+    margin: 8% 0 0 18%;
 }
 .portfolio__examples {
     display: flex;
@@ -322,14 +323,15 @@
 }
 
 .contact__info{
-    /* display: flex; */
-
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .contact__info-form {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 165%;
     position: relative;
 }
 
@@ -338,28 +340,19 @@
     border: none;
     border-bottom: 1px solid #999999; 
     margin-bottom: 20%;
+    font-size: 16px;
+}
+
+.form__input:focus {
+    outline: none;
 }
 
 form {
-    margin-top: 7%;
+    margin: 7% 20% 0 0;
 }
-.contact__info-form-label {
-    position: absolute;
-    pointer-events: none;
-    font-family: "Lato";
-    font-weight: 400;
-    letter-spacing: .04em;
-    color: #b3b3b3;
-    left: 10px;
-    top: -20px;
-    line-height: 40px;
-    transition: .3s;
-}
-
-.form__input:focus~.contact__info-form-label,
-.form__input:not(:focus):valid~.contact__info-form-label {
-  top: -40px;
-  font-size: 10px;
+.changes {
+    left:0;
+    font-size: 20px;
 }
 
 .form__btn {
@@ -367,7 +360,30 @@ form {
     padding: 20px 0;
     background: #ff4200;
     color: #fff;
+    font-size: 14px;
     border: none;
     cursor: pointer;
     margin: 0 auto;
 }
+
+.contact__info_me-list {
+    list-style: none;
+    color: #b3b3b3;
+}
+
+.contact__info_me-list-item a {
+    font-family: "Lato";
+    font-weight: 400;
+    color:#999999;
+    text-decoration: none;
+}
+
+.contact__info_me-list-item p {
+    margin: 6px;  
+}
+
+.contact__info_me-list-item:hover a {
+    color: #ffffff;
+}
+
+

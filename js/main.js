@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 
 /**************  menuSlide ******************/
-var menuBtn = document.querySelector('.menu__btn'),
+const menuBtn = document.querySelector('.menu__btn'),
     menuNav = document.querySelector('.menu__nav');
 
     menuBtn.addEventListener('click', function(e){
@@ -25,7 +25,7 @@ var menuBtn = document.querySelector('.menu__btn'),
     
 /**************  btnReadMore ******************/
 
-var readMoreBtn = document.querySelector('.header__more'),
+const readMoreBtn = document.querySelector('.header__more'),
     header = document.querySelector('.header'),
     studio = document.querySelector('.studio');
     
@@ -40,9 +40,9 @@ var readMoreBtn = document.querySelector('.header__more'),
     });
 
 /**************  Menu ******************/    
-var aboutBtn = document.querySelector('.about'),
+const aboutBtn = document.querySelector('.aboutBtn'),
     portfolioBtn = document.querySelector('.portfolioBtn'),
-    contactBtn = document.querySelector('.contact'),
+    contactBtn = document.querySelector('.contactBtn'),
     portfolioSection = document.querySelector('.portfolio'),
     contactSection = document.querySelector('.contact'),
     formBtn = document.querySelector('.form-btn');
