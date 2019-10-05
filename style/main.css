@@ -243,6 +243,8 @@
     width: 60%;
     z-index: 2;
     font-size: 14px;
+    font-family: "Lato";
+    letter-spacing: 0.02em;
     color: #999999;
     position: relative;
     text-align: left;
@@ -286,6 +288,13 @@
     display: flex;
     align-items: flex-start;
     margin-top: 11%;
+    transition: .5 all ease;
+}
+.protfolio__examples-works a {
+    transition: .4s all ease;
+}
+.protfolio__examples-works a:hover {
+    transform: translateY(-20px);
 }
 .portfolio__examples_item {
     width: 80%;
